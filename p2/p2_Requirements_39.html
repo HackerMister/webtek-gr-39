@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/p1.css">
-    <title>P1 Project Requirements</title>
-  </head>
-  <body>
-    <div class="content">
-      <img class="spisebilde" src="images/spiseklubben.jpg" alt="spiseklubben">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/p1.css">
+  <title>P1 Project Requirements</title>
+</head>
+
+<body>
+  <div class="content">
+    <img class="spisebilde" src="images/spiseklubben.jpg" alt="spiseklubben">
     <header>
       <h5>Arvin, Håvard, Rune og Jens Kristian</h5>
       <h6>20.09.2018</h6>
@@ -15,7 +17,8 @@
     <article>
       <section>
         <h3>Administrative details</h3>
-        <p>Vår klient er en studentklubb som heter Spiseklubben. Klubbens formål er at samle studerende til fælles middag for en god mad-oplevelse, socialt samvær, inspiration og udveksling af erfaringer. Klubben er nyligt oprettet og består i skrivende stund af studerende fra ID. Siden klubbens oprettelse har der været fælles middag en gang i ugen. Vi er selv aktive medlemmer af klubben, hvilket også gør forventningsafstemningen mellem os og klubben lettere.</p>
+        <p>Vår klient er en studentklubb som heter Spiseklubben. Klubbens formål er at samle studerende til fælles middag for en god mad-oplevelse, socialt samvær, inspiration og udveksling af erfaringer. Klubben er nyligt oprettet og består i
+          skrivende stund af studerende fra ID. Siden klubbens oprettelse har der været fælles middag en gang i ugen. Vi er selv aktive medlemmer af klubben, hvilket også gør forventningsafstemningen mellem os og klubben lettere.</p>
       </section>
       <section>
         <h3>Purpose, goals and audience</h3>
@@ -25,36 +28,120 @@
         <h3>Navigation Structure</h3>
         <img src="images/navigation structure v3.png" class="diagram" alt="Diagram of navigation structure">
         <p>The website is structured in a mix between linear- and augmented linear structure. With that said, the overall form is hierarchical. Each page contains links back to the landing page and subpages via the navigational bar. </p>
-        <p>“Hjem” is the landing page. A welcome page with short information about the dinner club concept. From here you can navigate to all the other subpages – “Påmelding”, “Tips og triks”, “Kontakt”, “Oppskrifter”, “Bildegalleri”, “Ukas rett”, “Ukas rett arkiv”.</p>
+        <p>“Hjem” is the landing page. A welcome page with short information about the dinner club concept. From here you can navigate to all the other subpages – “Påmelding”, “Tips og triks”, “Kontakt”, “Oppskrifter”, “Bildegalleri”, “Ukas rett”,
+          “Ukas rett arkiv”.</p>
         <p>The pages just mentioned is linked to each other via the navigation menu at the top of the website. “Bildegalleri”, “Ukas rett” and “Ukas rett arkiv” will also link directly to “Oppskrifter”.</p>
-        <p>“Oppskrifter“ will contain recipes listed in sub categories. In each subcategory there will be links to recipes as indicated in the diagram. Subpages of “Oppskrifter” will link back to every page because of the navigation menu on all pages. This is indicated by the dotted line on the pizza-subpage, with an arrow towards “Påmelding”. This to indicate it goes only one way. Also, this dotted line represents all the subpages of “Oppskrifter”. Drawing all the lines from every subpage made the diagram impossible to read.</p>
+        <p>“Oppskrifter“ will contain recipes listed in sub categories. In each subcategory there will be links to recipes as indicated in the diagram. Subpages of “Oppskrifter” will link back to every page because of the navigation menu on all
+          pages. This is indicated by the dotted line on the pizza-subpage, with an arrow towards “Påmelding”. This to indicate it goes only one way. Also, this dotted line represents all the subpages of “Oppskrifter”. Drawing all the lines from
+          every subpage made the diagram impossible to read.</p>
         <p>An example flow of the page would be a person landing on “hjem” then goes to “Bildegalleri” to look at food pictures, then deciding that he wants to attend a dinner event and clicks “påmelding” and signs up for an event.</p>
-        <p>The image was made using the online app <a href="https://www.mindmup.com/">Mindmup</a>. The functionality was limited, try to regard each line as a two-way connection, linking back and forth. Also, we would like to structure it with the “index.html” at the top to more clearly show the hierarchical structure, but that resulted in lines crossing and making the visual information harder to understand.</p>
+        <p>The image was made using the online app <a href="https://www.mindmup.com/">Mindmup</a>. The functionality was limited, try to regard each line as a two-way connection, linking back and forth. Also, we would like to structure it with the
+          “index.html” at the top to more clearly show the hierarchical structure, but that resulted in lines crossing and making the visual information harder to understand.</p>
       </section>
       <section>
         <h3>Page layout and Apperance</h3>
-          <p>A description of design decisions that are universal to your site</p>
+        <p>A description of design decisions that are universal to your site</p>
       </section>
       <section>
         <h3>Content</h3>
-          <p>This is the longest section, for every page you will need to give a text description of the content of the page as well as an image of the mockup of the page</p>
+        <p>This is the longest section, for every page you will need to give a text description of the content of the page as well as an image of the mockup of the page</p>
       </section>
       <section>
         <h3>Minimum Requirements</h3>
         <p>the website must include four distinct javascript applications</p>
       </section>
-         <section>
+      <section>
         <h3>Plan</h3>
         <p>provide a clear specific description of your plan for building the site</p>
+        <ul>
+          <li>Index.html/hjem</li>
+          <ul>
+            <li>Påmelding.html</li>
+            <li>Tips og Triks.html</li>
+            <li>Kontakter.html</li>
+            <li>Oppskrifter.html</li>
+            <ul>
+              <li>Pizza.html</li>
+              <li>Pasta.html</li>
+              <li>Gryter.html</li>
+              <li>Fisk.html</li>
+              <li>Vegetar.html</li>
+            </ul>
+            <li>Bildegalleri.html</li>
+            <li>Ukas rett.html</li>
+            <li>Ukas rett arkiv.html</li>
+          </ul>
+          <li>CSS</li>
+          <ul>
+            <li>Main.css</li>
+            <li>Gallery.css</li>
+          </ul>
+          <li>Scripts</li>
+          <ul>
+            <li>Gallery_slideshow.js</li>
+            <li>Host_dinner.js</li>
+            <li>Signup_dinner.js</li>
+            <li>animation.js</li>
+          </ul>
+          <li>Images</li>
+          <ul>
+            <li>Dinner images(5-10)</li>
+            <li>Logo</li>
+            <li>Background image</li>
+            <li>Navbar background image/banner</li>
+          </ul>
+          <li>Modularity</li>
+          <ul>
+            <li>Menu.part</li>
+          </ul>
+
+
+        </ul>
+
+        <table border="1">
+          <tbody>
+            <tr>
+              <td>File Name</td>
+              <td>File description</td>
+              <td>Deadline</td>
+              <td>Assigned Person</td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+            <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
-         <section>
+      <section>
         <h3>Final location</h3>
         <p>
-            <a href="http://folk.ntnu.no/haavaak/" target="_blank" >http://folk.ntnu.no/haavaak/</a>
+          <a href="http://folk.ntnu.no/haavaak/" target="_blank">http://folk.ntnu.no/haavaak/</a>
         </p>
       </section>
     </article>
-      <footer>Arvin, Håvard, Rune og Jens Kristian</footer>
+    <footer>Arvin, Håvard, Rune og Jens Kristian</footer>
   </div>
-  </body>
+</body>
+
 </html>
