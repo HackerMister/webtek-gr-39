@@ -22,7 +22,9 @@
       </section>
       <section>
         <h3>Purpose, goals and audience</h3>
-        <p>Nettsidens mål er å gøre det lettere at organisere felles middager, dele og finde opskrifter og inspiration, og finde information og billeder til klubben. For klubbens medlemmer vil det være muligt at lægge en begivenhed op hvis de vil hoste en middag og det skal være muligt at melde sig på denne middag. For interesserede og andre som ikke er medlemmer vil websiden kunne informere om hvad klubben er og står for, og det vil være muligt at komme i kontakt med klubben via mail hvis man har spørgsmål eller ønsker at blive medlem. Som beskrevet i Administrative Details, så vil audiencen hovedsakelig være studenter på NTNU</p>
+        <p>Nettsidens mål er å gøre det lettere at organisere felles middager, dele og finde opskrifter og inspiration, og finde information og billeder til klubben. For klubbens medlemmer vil det være muligt at lægge en begivenhed op hvis de vil
+          hoste en middag og det skal være muligt at melde sig på denne middag. For interesserede og andre som ikke er medlemmer vil websiden kunne informere om hvad klubben er og står for, og det vil være muligt at komme i kontakt med klubben via
+          mail hvis man har spørgsmål eller ønsker at blive medlem. Som beskrevet i Administrative Details, så vil audiencen hovedsakelig være studenter på NTNU</p>
       </section>
       <section>
         <h3>Navigation Structure</h3>
@@ -52,40 +54,40 @@
       </section>
       <section>
         <h3>Plan</h3>
-        <p>provide a clear specific description of your plan for building the site</p>
+        <p>Under følger en oversikt over hvordan vi har tenkt å strukturere innholdet på nettsiden. Vi har og laget en tabell hvor vi har listet opp det vi til nå har av oppgaver for å få nettsiden ferdig. Endringer utover denne planen vil bli
+          dokumentert i P3_changes. </p>
 
         <h4>Organisering</h4>
+        <p>Dette er den foreløpige strukturen vi ser for oss nettsiden vil ha. Vi har listet den opp ved bruk av en usortert liste, hvor underpunkter blir å anse som undermapper.</p>
         <ul>
           <li>Index.html/hjem</li>
+          <li>Påmelding.html</li>
+          <li>Tips og Triks.html</li>
+          <li>Kontakter.html</li>
+          <li>Oppskrifter.html</li>
           <ul>
-            <li>Påmelding.html</li>
-            <li>Tips og Triks.html</li>
-            <li>Kontakter.html</li>
-            <li>Oppskrifter.html</li>
-            <ul>
-              <li>Pizza.html</li>
-              <li>Pasta.html</li>
-              <li>Gryter.html</li>
-              <li>Fisk.html</li>
-              <li>Vegetar.html</li>
-            </ul>
-            <li>Bildegalleri.html</li>
-            <li>Ukas rett.html</li>
-            <li>Ukas rett arkiv.html</li>
+            <li>Pizza.html</li>
+            <li>Pasta.html</li>
+            <li>Gryter.html</li>
+            <li>Fisk.html</li>
+            <li>Vegetar.html</li>
           </ul>
-          <li>CSS</li>
+          <li>Bildegalleri.html</li>
+          <li>Ukas rett.html</li>
+          <li>Ukas rett arkiv.html</li>
+          <li>CSS/</li>
           <ul>
             <li>Main.css</li>
             <li>Gallery.css</li>
           </ul>
-          <li>Scripts</li>
+          <li>Scripts/</li>
           <ul>
             <li>Gallery_slideshow.js</li>
             <li>Host_dinner.js</li>
             <li>Signup_dinner.js</li>
             <li>animation.js</li>
           </ul>
-          <li>Images</li>
+          <li>Images/</li>
           <ul>
             <li>Dinner images(5-10)</li>
             <li>Logo</li>
@@ -94,10 +96,14 @@
           </ul>
           <li>Modularity</li>
           <ul>
-            <li>Menu.part</li>
+            <li>Menu</li>
+            <li>JS scripts</li>
           </ul>
         </ul>
-        <h4>Ansvarsområder</h4>
+        <h4>Modularity</h4>
+        <p>For å oppnå en modulæritet skal vi ha felles CSS for nettsiden. Det er listet opp en egen CSS-fil for galleri i oversikten over. Dette fordi det mest sannsynlig innebærer en del arbeid, men ved bruk av ID og CLASS så kan vi bygge det inn i main.css.</p>
+        <p>Det samme gjelder JavaScript på funksjoner som vi ser går igjen. Der vil vi samle koden slik at vi ikke skriver den samme koden flere ganger.</p>
+        <h4>Ansvarsområder og tidsfrister</h4>
         <table border="1">
           <tbody>
             <tr>
@@ -116,7 +122,7 @@
               <td>Påmelding.html</td>
               <td>Sign up for events</td>
               <td> </td>
-              <td> </td>
+              <td>Jens Kristian </td>
             </tr>
             <tr>
               <td>Tips og triks.html</td>
@@ -138,49 +144,49 @@
             </tr>
             <tr>
               <td>Pizza.html</td>
-              <td> </td>
+              <td>pizza oppskrifter </td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Pasta.html</td>
-              <td> </td>
+              <td>pasta oppskrifter </td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Gryter.html</td>
-              <td> </td>
+              <td>gryteoppskrifter </td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Fisk.html</td>
-              <td> </td>
+              <td>fiskemiddag</td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Vegatar.html</td>
-              <td> </td>
+              <td>Vegetaroppskrifter</td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Bildegalleri.html</td>
-              <td> </td>
+              <td>Bilder av tidligere middager</td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Ukas rett.html</td>
-              <td> </td>
+              <td>Ukas rett med bilde</td>
               <td> </td>
               <td> </td>
             </tr>
             <tr>
               <td>Ukas rett arkiv.html</td>
-              <td> </td>
+              <td> Tidligere middager</td>
               <td> </td>
               <td> </td>
             </tr>
@@ -198,21 +204,21 @@
             </tr>
             <tr>
               <td>gallery_slideshow.js</td>
+              <td> load 3 random images on page load </td>
               <td> </td>
-              <td> </td>
-              <td> </td>
+              <td> Jens Kristian</td>
             </tr>
             <tr>
               <td>host_dinner.js</td>
               <td>check if valid form input</td>
               <td> </td>
-              <td> </td>
+              <td> Jens Kristian</td>
             </tr>
             <tr>
               <td>signup_dinner.js</td>
               <td>check if valid form input</td>
               <td> </td>
-              <td> </td>
+              <td> Jens Kristian</td>
             </tr>
             <tr>
               <td>animation.js</td>
@@ -246,13 +252,7 @@
             </tr>
             <tr>
               <td>Modularity</td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Copy 'n paste me for more table space</td>
-              <td> </td>
+              <td>Unngå copy/paste løsninger</td>
               <td> </td>
               <td> </td>
             </tr>
