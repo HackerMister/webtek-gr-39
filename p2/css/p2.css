@@ -66,6 +66,7 @@ p {
 
 }
 
+
 footer {
   bottom: 0px;
   text-align: center;
@@ -97,4 +98,8 @@ a:hover{
 
 a:active{
     color: chartreuse;
+}
+
+table, tbody, tr, td {
+    border: 1px solid black;
 }
