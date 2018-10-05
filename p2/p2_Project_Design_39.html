@@ -2,319 +2,322 @@
 <html lang="no" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/p2.css">
-  <title>P2 Project Design</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/p2.css">
+    <title>P2 Project Design</title>
 </head>
 
 <body>
-  <div class="content">
-    <img class="spisebilde" src="images/spiseklubben.jpg" alt="spiseklubben">
-    <header>
-      <h5>Arvin, Håvard, Rune og Jens Kristian</h5>
-      <h6>20.09.2018</h6>
-    </header>
-    <article>
-      <section>
-        <h3>Administrative details</h3>
-        <p>Our client is a student club called SpiseKlubben, It consist mainly of students at industrial design.</p>
-      </section>
-      <section>
-        <h3>Purpose, goals and audience</h3>
-        <p>The website will give users a site to find food recepies, tips and tricks as well as giving the possibility to arrange and sign up for the weekly dinners. We want the site to give students a community to be part of where they can share the joys of eating food together%</p>
-      </section>
-      <section>
-        <h3>Navigation Structure</h3>
-        <a href="images/navigation structure v3.png">
-        <img src="images/navigation structure v3.png" class="diagram" alt="Diagram of navigation structure">
-        </a>
-        <p>The website is structured in a mix between linear- and augmented linear structure. With that said, the overall form is hierarchical. Each page contains links back to the landing page and subpages via the navigational bar. </p>
-        <p>“Hjem” is the landing page. A welcome page with short information about the dinner club concept. From here you can navigate to all the other subpages – “Påmelding”, “Tips og triks”, “Kontakt”, “Oppskrifter”, “Bildegalleri”, “Ukas rett”,
-          “Ukas rett arkiv”.</p>
-        <p>The pages just mentioned is linked to each other via the navigation menu at the top of the website. “Bildegalleri”, “Ukas rett” and “Ukas rett arkiv” will also link directly to “Oppskrifter”.</p>
-        <p>“Oppskrifter“ will contain recipes listed in sub categories. In each subcategory there will be links to recipes as indicated in the diagram. Subpages of “Oppskrifter” will link back to every page because of the navigation menu on all
-          pages. This is indicated by the dotted line on the pizza-subpage, with an arrow towards “Påmelding”. This to indicate it goes only one way. Also, this dotted line represents all the subpages of “Oppskrifter”. Drawing all the lines from
-          every subpage made the diagram impossible to read.</p>
-        <p>An example flow of the page would be a person landing on “hjem” then goes to “Bildegalleri” to look at food pictures, then deciding that he wants to attend a dinner event and clicks “påmelding” and signs up for an event.</p>
-        <p>The image was made using the online app <a href="https://www.mindmup.com/">Mindmup</a>. The functionality was limited. Please regard each line as a two-way connection, linking back and forth. Also, we would like to structure it with the
-          “index.html” at the top to more clearly show the hierarchical structure, but that resulted in lines crossing and making the visual information harder to understand.</p>
-      </section>
-      <section>
-        <h3>Page layout and Apperance</h3>
-        <p>A description of design decisions that are universal to your site</p>
-          <ul>
-            <li>font-type: Helvetica for content (Fortuna for the logo)</li>
-            <li>font-size: </li>
-            <li>Colour scheme:</li>
-              <ul>
-                <li>logo: #c39c70</li>
-                <li>background: #282828</li>
-                <li>Text, Content: white (#EEEEEE)</li>
-                <li>links looks like the other text around them, but will hav a hover effect that will underline them and make them the same colour as the logo (#c39c70). When selected it will turn #BB7C71 (the color of the wales mouth)</li>
-                <li>menu bar:</li>
-              </ul>
-            <li>Body-width: min 500px, max 1200px</li>
-            <li>Menu bar</li>
-            <ul>
-                <li>Position: top right half of screen. when opening a page, the menu bar is a little lower, and follows the page up to the top of the screen when scrolling down.</li>
-                <li>size: </li>
-                <li>it vill have a hover-funktion, that vil change the colour of the font to #c39c70</li>
-                <li>the hover funktion will furthermore show a line under the hovered link, and if clikked the line will stay under the chosen link to remind the user where on the website he/she is at the moment.</li>
-                
-            </ul>
-            <li>Footer: mailadresse, social media widges</li>
-            <li>Favicon: noget med background-colour and logo-colour</li>
-            <li>Logo</li>
-              <ul>
-                <li>position: upper left, follows the menu bar</li>
-                <li>its a interactive link that takes the user to the main frontpage when clikked</li>
-                <li>the logo will consist of wale and the text "Spiseklubben". The wale is a symbol of a beautiful creature thet can consume a lot of food and doesn't give a fuck, wich are some values we all can appreciate</li>
-              </ul>
-          </ul>
-      </section>
-      <section>
-        <h3>Content</h3>
-        <p>This is the longest section, for every page you will need to give a text description of the content of the page as well as an image of the mockup of the page</p>
-      </section>
-      <section>
-        <h3>Minimum Requirements</h3>
-        <p>the website must include four distinct javascript applications</p>
-          <ol>
-              <li>
-                  <h4>Pictures the front page</h4>
-                  <p>There will be a slideshow showing pictures that changes every 10 seconds at the front page. (the first picture on figure 1 under "Content")</p>
-              </li>
-              <li>
-                  <h4>Form-validation for "Påmelding"</h4>
-                  <p>When you want to host a dinner you should be able to write your name, email, what's on the menu, where the dinner is, what time it is, and how many you are able to host.</p>
-                  <p>If you want to sign up for a dinner, you should be able to write your name and email.</p>
-              </li>
-              <li>
-                  <h4>"Er det middag idag?"</h4>
-                  <p>On the frontpage there will be at spot where you can se if there is someone hosting a dinner. If not, it will show how many days untill next dinner. There will be a direct link to sign up for the dinner.</p>
-              </li>
-              <li>
-                  <h4>Pictures at the gallery</h4>
-                  <p>When selecting a picture in the gallery, it will be shown as a bigger picture, with the ability to go to the next or the previous picture directly in the "picture window". We think that the ability to go through the enlarged pictures, without going back to the main gallery every time you want to se a new picture is making it a better experience</p>
-              </li>
-          </ol>
-      </section>
-      <section>
-        <h3>Plan</h3>
-        <p>Under følger en oversikt over hvordan vi har tenkt å strukturere innholdet på nettsiden. Vi har og laget en tabell hvor vi har listet opp det vi til nå har av oppgaver for å få nettsiden ferdig. Endringer utover denne planen vil bli
-          dokumentert i P3_changes. </p>
+    <div class="content">
+        <img class="spisebilde" src="images/spiseklubben.jpg" alt="spiseklubben">
+        <header>
+            <h5>Arvin, Håvard, Rune og Jens Kristian</h5>
+            <h6>20.09.2018</h6>
+        </header>
+        <article>
+            <section>
+                <h3>Administrative details</h3>
+                <p>Our client is a student club called SpiseKlubben, It consist mainly of students at industrial design.</p>
+            </section>
+            <section>
+                <h3>Purpose, goals and audience</h3>
+                <p>The website will give users a site to find food recepies, tips and tricks as well as giving the possibility to arrange and sign up for the weekly dinners. We want the site to give students a community to be part of where they can share the joys of eating food together%</p>
+            </section>
+            <section>
+                <h3>Navigation Structure</h3>
+                <a href="images/navigation structure v3.png">
+                    <img src="images/navigation structure v3.png" class="diagram" alt="Diagram of navigation structure">
+                </a>
+                <p>The website is structured in a mix between linear- and augmented linear structure. With that said, the overall form is hierarchical. Each page contains links back to the landing page and subpages via the navigational bar. </p>
+                <p>“Hjem” is the landing page. A welcome page with short information about the dinner club concept. From here you can navigate to all the other subpages – “Påmelding”, “Tips og triks”, “Kontakt”, “Oppskrifter”, “Bildegalleri”, “Ukas rett”,
+                    “Ukas rett arkiv”.</p>
+                <p>The pages just mentioned is linked to each other via the navigation menu at the top of the website. “Bildegalleri”, “Ukas rett” and “Ukas rett arkiv” will also link directly to “Oppskrifter”.</p>
+                <p>“Oppskrifter“ will contain recipes listed in sub categories. In each subcategory there will be links to recipes as indicated in the diagram. Subpages of “Oppskrifter” will link back to every page because of the navigation menu on all
+                    pages. This is indicated by the dotted line on the pizza-subpage, with an arrow towards “Påmelding”. This to indicate it goes only one way. Also, this dotted line represents all the subpages of “Oppskrifter”. Drawing all the lines from
+                    every subpage made the diagram impossible to read.</p>
+                <p>An example flow of the page would be a person landing on “hjem” then goes to “Bildegalleri” to look at food pictures, then deciding that he wants to attend a dinner event and clicks “påmelding” and signs up for an event.</p>
+                <p>The image was made using the online app <a href="https://www.mindmup.com/">Mindmup</a>. The functionality was limited. Please regard each line as a two-way connection, linking back and forth. Also, we would like to structure it with the
+                    “index.html” at the top to more clearly show the hierarchical structure, but that resulted in lines crossing and making the visual information harder to understand.</p>
+            </section>
+            <section>
+                <h3>Page layout and Apperance</h3>
+                <p>A description of design decisions that are universal to your site</p>
+                <ul>
+                    <li>font-type: Helvetica for content (Fortuna for the logo)</li>
+                    <li>font-size: </li>
+                    <li>Colour scheme:</li>
+                    <ul>
+                        <li>logo: #c39c70</li>
+                        <li>background: #282828</li>
+                        <li>Text, Content: white (#EEEEEE)</li>
+                        <li>links looks like the other text around them, but will hav a hover effect that will underline them and make them the same colour as the logo (#c39c70). When selected it will turn #BB7C71 (the color of the wales mouth)</li>
+                        <li>menu bar:</li>
+                    </ul>
+                    <li>Body-width: min 500px, max 1200px</li>
+                    <li>Menu bar</li>
+                    <ul>
+                        <li>Position: top right half of screen. when opening a page, the menu bar is a little lower, and follows the page up to the top of the screen when scrolling down.</li>
+                        <li>size: </li>
+                        <li>it vill have a hover-funktion, that vil change the colour of the font to #c39c70</li>
+                        <li>the hover funktion will furthermore show a line under the hovered link, and if clikked the line will stay under the chosen link to remind the user where on the website he/she is at the moment.</li>
 
-        <h4>Organisering</h4>
-        <p>Dette er den foreløpige strukturen vi ser for oss nettsiden vil ha. Vi har listet den opp ved bruk av en usortert liste, hvor underpunkter blir å anse som undermapper.</p>
-        <ul>
-          <li>Index.html/hjem</li>
-          <li>Påmelding.html</li>
-          <li>Tips og Triks.html</li>
-          <li>Kontakter.html</li>
-          <li>Oppskrifter.html</li>
-          <ul>
-            <li>Pizza.html</li>
-            <li>Pasta.html</li>
-            <li>Gryter.html</li>
-            <li>Fisk.html</li>
-            <li>Vegetar.html</li>
-          </ul>
-          <li>Bildegalleri.html</li>
-          <li>Ukas rett.html</li>
-          <li>Ukas rett arkiv.html</li>
-          <li>CSS/</li>
-          <ul>
-            <li>Main.css</li>
-            <li>Gallery.css</li>
-          </ul>
-          <li>Scripts/</li>
-          <ul>
-            <li>Gallery_slideshow.js</li>
-            <li>Host_dinner.js</li>
-            <li>Signup_dinner.js</li>
-            <li>animation.js</li>
-          </ul>
-          <li>Images/</li>
-          <ul>
-            <li>Dinner images(5-10)</li>
-            <li>Logo</li>
-            <li>Background image</li>
-            <li>Navbar background image/banner</li>
-          </ul>
-          <li>Modularity</li>
-          <ul>
-            <li>Menu</li>
-            <li>JS scripts</li>
-          </ul>
-        </ul>
-        <h4>Modularity</h4>
-        <p>For å oppnå en modulæritet skal vi ha felles CSS for nettsiden. Det er listet opp en egen CSS-fil for galleri i oversikten over. Dette fordi det mest sannsynlig innebærer en del arbeid, men ved bruk av ID og CLASS så kan vi bygge det inn i main.css.</p>
-        <p>Det samme gjelder JavaScript på funksjoner som vi ser går igjen. Der vil vi samle koden slik at vi ikke skriver den samme koden flere ganger.</p>
-        <h4>Ansvarsområder og tidsfrister</h4>
-        <table>
-          <tbody>
-            <tr>
-              <td>File Name</td>
-              <td>File description</td>
-              <td>Deadline</td>
-              <td>Assigned Person</td>
-            </tr>
-            <tr>
-              <td>index.html</td>
-              <td>homepage/landing page</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Påmelding.html</td>
-              <td>Sign up for events</td>
-              <td> </td>
-              <td>Jens Kristian </td>
-            </tr>
-            <tr>
-              <td>Tips og triks.html</td>
-              <td>cooking tips</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Kontaker</td>
-              <td>email and contact info</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Oppskrifter.html</td>
-              <td>samling oppskrifter</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Pizza.html</td>
-              <td>pizza oppskrifter </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Pasta.html</td>
-              <td>pasta oppskrifter </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Gryter.html</td>
-              <td>gryteoppskrifter </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Fisk.html</td>
-              <td>fiskemiddag</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Vegatar.html</td>
-              <td>Vegetaroppskrifter</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Bildegalleri.html</td>
-              <td>Bilder av tidligere middager</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Ukas rett.html</td>
-              <td>Ukas rett med bilde</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Ukas rett arkiv.html</td>
-              <td> Tidligere middager</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>main.css</td>
-              <td>main css used</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>gallery.html</td>
-              <td>css optimized for imgages</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>gallery_slideshow.js</td>
-              <td> load 3 random images on page load </td>
-              <td> </td>
-              <td> Jens Kristian</td>
-            </tr>
-            <tr>
-              <td>host_dinner.js</td>
-              <td>check if valid form input</td>
-              <td> </td>
-              <td> Jens Kristian</td>
-            </tr>
-            <tr>
-              <td>signup_dinner.js</td>
-              <td>check if valid form input</td>
-              <td> </td>
-              <td> Jens Kristian</td>
-            </tr>
-            <tr>
-              <td>animation.js</td>
-              <td>animate logo and slideshow</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Dinner images</td>
-              <td>images of dinners served</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Logo</td>
-              <td>website logo</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Background image</td>
-              <td> </td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Navbar background</td>
-              <td>Banner</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-            <tr>
-              <td>Modularity</td>
-              <td>Unngå copy/paste løsninger</td>
-              <td> </td>
-              <td> </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h3>Final location</h3>
-        <p>
-          <a href="http://folk.ntnu.no/haavaak/" target="_blank">http://folk.ntnu.no/haavaak/</a>
-        </p>
-      </section>
-    </article>
-    <footer>Arvin, Håvard, Rune og Jens Kristian</footer>
-  </div>
+                    </ul>
+                    <li>Footer: mailadresse, social media widges</li>
+                    <li>Favicon: noget med background-colour and logo-colour</li>
+                    <li>Logo</li>
+                    <ul>
+                        <li>position: upper left, follows the menu bar</li>
+                        <li>its a interactive link that takes the user to the main frontpage when clikked</li>
+                        <li>the logo will consist of wale and the text "Spiseklubben". The wale is a symbol of a beautiful creature thet can consume a lot of food and doesn't give a fuck, wich are some values we all can appreciate</li>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h3>Content</h3>
+                <p>This is the longest section, for every page you will need to give a text description of the content of the page as well as an image of the mockup of the page</p>
+                <img src="images/forside-top.png" alt="forside topp" class="forsideb">
+                <p>forklaring.......</p>
+                <img src="images/forside-bunn.png" alt="forside bunn" class="forsideb">
+            </section>
+            <section>
+                <h3>Minimum Requirements</h3>
+                <p>the website must include four distinct javascript applications</p>
+                <ol>
+                    <li>
+                        <h4>Pictures the front page</h4>
+                        <p>There will be a slideshow showing pictures that changes every 10 seconds at the front page. (the first picture on figure 1 under "Content")</p>
+                    </li>
+                    <li>
+                        <h4>Form-validation for "Påmelding"</h4>
+                        <p>When you want to host a dinner you should be able to write your name, email, what's on the menu, where the dinner is, what time it is, and how many you are able to host.</p>
+                        <p>If you want to sign up for a dinner, you should be able to write your name and email.</p>
+                    </li>
+                    <li>
+                        <h4>"Er det middag idag?"</h4>
+                        <p>On the frontpage there will be at spot where you can se if there is someone hosting a dinner. If not, it will show how many days untill next dinner. There will be a direct link to sign up for the dinner.</p>
+                    </li>
+                    <li>
+                        <h4>Pictures at the gallery</h4>
+                        <p>When selecting a picture in the gallery, it will be shown as a bigger picture, with the ability to go to the next or the previous picture directly in the "picture window". We think that the ability to go through the enlarged pictures, without going back to the main gallery every time you want to se a new picture is making it a better experience</p>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <h3>Plan</h3>
+                <p>Under følger en oversikt over hvordan vi har tenkt å strukturere innholdet på nettsiden. Vi har og laget en tabell hvor vi har listet opp det vi til nå har av oppgaver for å få nettsiden ferdig. Endringer utover denne planen vil bli
+                    dokumentert i P3_changes. </p>
+
+                <h4>Organisering</h4>
+                <p>Dette er den foreløpige strukturen vi ser for oss nettsiden vil ha. Vi har listet den opp ved bruk av en usortert liste, hvor underpunkter blir å anse som undermapper.</p>
+                <ul>
+                    <li>Index.html/hjem</li>
+                    <li>Påmelding.html</li>
+                    <li>Tips og Triks.html</li>
+                    <li>Kontakter.html</li>
+                    <li>Oppskrifter.html</li>
+                    <ul>
+                        <li>Pizza.html</li>
+                        <li>Pasta.html</li>
+                        <li>Gryter.html</li>
+                        <li>Fisk.html</li>
+                        <li>Vegetar.html</li>
+                    </ul>
+                    <li>Bildegalleri.html</li>
+                    <li>Ukas rett.html</li>
+                    <li>Ukas rett arkiv.html</li>
+                    <li>CSS/</li>
+                    <ul>
+                        <li>Main.css</li>
+                        <li>Gallery.css</li>
+                    </ul>
+                    <li>Scripts/</li>
+                    <ul>
+                        <li>Gallery_slideshow.js</li>
+                        <li>Host_dinner.js</li>
+                        <li>Signup_dinner.js</li>
+                        <li>animation.js</li>
+                    </ul>
+                    <li>Images/</li>
+                    <ul>
+                        <li>Dinner images(5-10)</li>
+                        <li>Logo</li>
+                        <li>Background image</li>
+                        <li>Navbar background image/banner</li>
+                    </ul>
+                    <li>Modularity</li>
+                    <ul>
+                        <li>Menu</li>
+                        <li>JS scripts</li>
+                    </ul>
+                </ul>
+                <h4>Modularity</h4>
+                <p>For å oppnå en modulæritet skal vi ha felles CSS for nettsiden. Det er listet opp en egen CSS-fil for galleri i oversikten over. Dette fordi det mest sannsynlig innebærer en del arbeid, men ved bruk av ID og CLASS så kan vi bygge det inn i main.css.</p>
+                <p>Det samme gjelder JavaScript på funksjoner som vi ser går igjen. Der vil vi samle koden slik at vi ikke skriver den samme koden flere ganger.</p>
+                <h4>Ansvarsområder og tidsfrister</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>File Name</td>
+                            <td>File description</td>
+                            <td>Deadline</td>
+                            <td>Assigned Person</td>
+                        </tr>
+                        <tr>
+                            <td>index.html</td>
+                            <td>homepage/landing page</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Påmelding.html</td>
+                            <td>Sign up for events</td>
+                            <td> </td>
+                            <td>Jens Kristian </td>
+                        </tr>
+                        <tr>
+                            <td>Tips og triks.html</td>
+                            <td>cooking tips</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Kontaker</td>
+                            <td>email and contact info</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Oppskrifter.html</td>
+                            <td>samling oppskrifter</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Pizza.html</td>
+                            <td>pizza oppskrifter </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Pasta.html</td>
+                            <td>pasta oppskrifter </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Gryter.html</td>
+                            <td>gryteoppskrifter </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Fisk.html</td>
+                            <td>fiskemiddag</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Vegatar.html</td>
+                            <td>Vegetaroppskrifter</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Bildegalleri.html</td>
+                            <td>Bilder av tidligere middager</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Ukas rett.html</td>
+                            <td>Ukas rett med bilde</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Ukas rett arkiv.html</td>
+                            <td> Tidligere middager</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>main.css</td>
+                            <td>main css used</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>gallery.html</td>
+                            <td>css optimized for imgages</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>gallery_slideshow.js</td>
+                            <td> load 3 random images on page load </td>
+                            <td> </td>
+                            <td> Jens Kristian</td>
+                        </tr>
+                        <tr>
+                            <td>host_dinner.js</td>
+                            <td>check if valid form input</td>
+                            <td> </td>
+                            <td> Jens Kristian</td>
+                        </tr>
+                        <tr>
+                            <td>signup_dinner.js</td>
+                            <td>check if valid form input</td>
+                            <td> </td>
+                            <td> Jens Kristian</td>
+                        </tr>
+                        <tr>
+                            <td>animation.js</td>
+                            <td>animate logo and slideshow</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Dinner images</td>
+                            <td>images of dinners served</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Logo</td>
+                            <td>website logo</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Background image</td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Navbar background</td>
+                            <td>Banner</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>Modularity</td>
+                            <td>Unngå copy/paste løsninger</td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h3>Final location</h3>
+                <p>
+                    <a href="http://folk.ntnu.no/haavaak/" target="_blank">http://folk.ntnu.no/haavaak/</a>
+                </p>
+            </section>
+        </article>
+        <footer>Arvin, Håvard, Rune og Jens Kristian</footer>
+    </div>
 </body>
 
 </html>
